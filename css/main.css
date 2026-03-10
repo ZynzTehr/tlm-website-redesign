@@ -1,0 +1,296 @@
+/* ============================== GLOBAL STYLES =============================== */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color1: #23221F;
+  --color2: #F0F0F0;
+  --color3: #DAA520;
+  --color4: #B87F1B;
+  --color5: #F8EED5;
+  --color6: #AAA99F;
+  --cursor-height: 0;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: Helvetica Neue Light, "Helvetica Neue", Helvetica Neue Condensed;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+  letter-spacing: 2px;
+}
+
+.courses, a {
+  color: var(--color1);
+}
+
+.slideShow {
+  box-shadow: 0 0 .5rem .5rem  var(--color3);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color4);
+}
+
+.tlm {
+  font-size: 10rem;
+}
+
+/* ============================== END OF GLOBAL STYLES =============================== */
+/* ================================== COMMON STYLES ================================== */
+
+#angleTxt, #title, .navText, strong, .heading  {
+  color: var(--color3);
+}
+
+#angleTxt, .cards, .cards a, .cards a:hover, .cards a:active, .cards a:focus  {
+  font-variant: small-caps;
+}
+
+#info, #form, .info {
+  color: var(--color6);
+  letter-spacing: 2px;
+}
+
+em, p, #message::selection, input::selection {
+  color: var(--color5);
+  letter-spacing: 1px;
+}
+
+.modal-dialog, .modal-content, .modal-header, .modal-footer {
+  background-color: var(--color5);
+}
+
+#message, input {
+  color: var(--color3);
+  border: 2px solid var(--color4);
+  /* background-color: var(--color3); */
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.card, .cards a, #modal button {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+} 
+
+/* ======================== END OF COMMON STYLES ========================= */
+/* ============================ NAV STYLES =============================== */
+
+#navBar {
+  background-color: var(--color5);
+}
+
+/* ========================== END OF NAV STYLES ========================== */
+/* ======== STYLES FOR TEXT NEXT TO THE LOGO RE-DESIGN AT THE TOP ======== */
+
+.missiontext {
+  display: block;
+  line-height: 1.7;
+}
+
+.missionimg {
+  max-height: 100px;
+  display: block;
+}
+
+.missionimg {
+  float: left;
+  margin-right: 20px;
+  shape-outside: polygon(
+    61.84% 87.87%,
+    7.64% 78.05%,
+    44.64% 2.06%,
+    120.1% 1.38%
+  );
+  max-height: 211px;
+}
+
+#angleTxt { 
+  font-style: oblique;
+  font-family: cursive;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+#angleTxt span:last-of-type {
+  color: var(--color6);
+}
+
+.quoteText {
+  color: var(--color5);
+  font-size: 1.5rem;
+  line-height: 1.3; 
+}
+
+/* ======== END OF STYLES FOR TEXT NEXT TO THE LOGO RE-DESIGN AT THE TOP ======== */
+/* =================== STYLES FOR CARDS AND INTERACTIVE STATES ================== */
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 8px 8px var(--color2);
+}
+
+.cardz:hover {
+  transform: scale(2.5);
+  box-shadow: 4px 8px 8px var(--color2);
+  z-index: 1;
+  margin-left: 10rem;
+}
+
+.cards {
+  background-color: var(--color3);
+}
+
+.cards a {
+  background-color: var(--color6);
+  border-color: var(--color1);
+  box-shadow: inset 1px 1px 6px 2px var(--color2);
+}
+
+.cards a:hover {
+  background-color: var(--color2);
+  border-color: var(--color1);
+  color: var(--color1);
+  box-shadow: inset 1px 1px 6px 1px var(--color6);
+  
+}
+
+.cards a:active {
+  background-color: var(--color2); 
+  border-color: var(--color1);
+  color: var(--color1);
+}
+
+.cards a:focus {
+  background-color: var(--color5);
+  border-color: var(--color1);
+  color: var(--color1);
+  box-shadow: inset 1px 1px 6px 1px var(--color6);
+}
+
+#modal button {
+  border: var(--color4);
+  background-color: var(--color4);
+  color: var(--color5);
+  box-shadow: inset 1px 1px 6px 1px var(--color5);
+}
+
+#modal button:hover {
+  border: var(--color5);
+  background-color: var(--color5);
+  color: var(--color6);
+  box-shadow: inset 0px 0px 6px 1px var(--color3);
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#modal button:active {
+  border: var(--color3);
+  background-color: var(--color3);
+  color: var(--color5);
+  box-shadow: inset 1px 1px 6px 1px var(--color5);
+}
+
+.slideShow img {
+  height: 400px;
+}
+
+#name, #email {
+  color: var(--color3);
+  border: 2px solid var(--color4);
+  /* background-color: var(--color3); */
+  letter-spacing: 1px;
+}
+
+
+/* =================== END OF STYLES FOR CARDS AND INTERACTIVE STATES ================== */
+
+footer {
+  background-color: var(--color3);
+}
+
+footer i {
+  color: var(--color4);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+footer i:hover {
+  color: var(--color5);
+  transform: scale(1.5);
+}
+
+/* =================== Re-SIZING CURSOR STYLES ================== */
+
+/* =================== ATTRIBUTION: PULLED THIS FROM THE "TLM" AUGUST NEWSLETTER BUT IT WAS NOT WORKING, I HAD TO MAKE IT FUNCTION MYSELF ================== */
+
+*::selection {
+  background:var(--color4);
+  background-blend-mode: overlay;
+}
+
+
+.highlightable {
+  --show-cursor: none;
+  cursor: none;
+}
+
+.highlightable:hover {
+      --show-cursor: block;
+      
+  &::after {
+      --cursor-width: max(6px, calc(var(--cursor-height) * .4));
+      
+      display: var(--show-cursor);
+      content: "";
+      width: max(10px, calc(var(--cursor-height) * .4));
+      height: var(--cursor-height);
+      pointer-events: auto;
+
+      background: transparent;
+      opacity: 80%;
+      border: 2px solid var(--color5);
+      box-shadow: 1px 1px 1px;
+      border-radius: calc(var(--cursor-width) / 2);
+      translate: -50%, -50%;
+
+      position: absolute;
+      top: var(--mouse-y);
+      left: var(--mouse-x);
+
+      cursor: none;
+      transition: height 0.3s cubic-bezier(0.095, 1.090, 0.605, 1.235),
+                  width 0.3s cubic-bezier(0.095, 1.090, 0.605, 1.235);
+
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+  }
+
+}
+
+/* =================== END OF Re-SIZING CURSOR STYLES ================== */
+
+@media (max-width: 1024px) {
+
+  .cardz:hover {
+    display: none;
+  }
+}
